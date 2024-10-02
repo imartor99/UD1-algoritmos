@@ -1,0 +1,11 @@
+Algoritmo sin_titulo
+	Escribir "base:"
+	LEER base
+	Escribir "altura:"
+	LEER altura
+	perimetro <- (altura*2) + (base*2)
+	area <- base * altura
+	Escribir "perímetro:" perímetro
+	Escribir "área:"  área
+	
+FinAlgoritmo
