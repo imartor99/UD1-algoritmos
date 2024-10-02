@@ -1,0 +1,14 @@
+Algoritmo sin_titulo
+	Escribir "Introduce un número"
+	Leer num
+	
+	unidades <- 0
+	decenas <- 0
+	
+	unidades <- trunc(num/10)
+	decenas <- num % 10
+	
+	invertido <- decenas * 10 + unidades
+	Escribir "El número invertido es:" invertido
+	
+FinAlgoritmo
