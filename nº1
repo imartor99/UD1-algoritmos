@@ -1,0 +1,7 @@
+Algoritmo sin_titulo
+	//Escribir un programa que pregunte al usuario su nombre, y luego lo salude.
+	Escribir "Escribir nombre"
+	LEER nombre
+	ESCRIBIR "hola " nombre
+	
+FinAlgoritmo
