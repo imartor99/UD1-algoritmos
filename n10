@@ -1,0 +1,34 @@
+Algoritmo ej10
+	//Un alumno desea saber cuál será su calificación final en la materia de Algoritmos. Dicha calificación se
+    //compone de los siguientes porcentajes:
+	//55% del promedio de sus tres calificaciones parciales.
+    //30% de la calificación del examen final.
+	//15% de la calificación de un trabajo final.
+	
+	Definir calificacion1, calificacion2, calificacion3, examenFinal, trabajoFinal, promedio Como Real
+    Definir calificacionFinal Como Real
+	
+    Escribir "Introduzca la primera calificación parcial:"
+    Leer calificacion1
+    Escribir "Introduzca la segunda calificación parcial:"
+    Leer calificacion2
+    Escribir "Introduzca la tercera calificación parcial:"
+    Leer calificacion3
+    
+    Escribir "Introduzca la calificación del examen final:"
+    Leer examenFinal
+    
+    Escribir "Introduzca la calificación del trabajo final:"
+    Leer trabajoFinal
+	
+    
+    promedio <- (calificacion1 + calificacion2 + calificacion3) / 3
+	
+    
+    calificacionFinal <- (promedio * 0.55) + (examenFinal * 0.30) + (trabajoFinal * 0.15)
+	
+    
+    Escribir "La calificación final es: ", calificacionFinal
+	
+	
+FinAlgoritmo
