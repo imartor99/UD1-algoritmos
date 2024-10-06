@@ -1,0 +1,28 @@
+Algoritmo ej8
+	//Un vendedor recibe un sueldo base más un 10% extra por comisión de sus ventas, el vendedor desea
+	//saber cuánto dinero obtendrá por concepto de comisiones por las tres ventas que realiza en el mes y
+	//el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones.
+	
+	Definir sueldo_base, venta1, venta2, venta3, total_ventas, comision, total_pago Como Real
+	
+    Escribir "Introduzca el sueldo base del vendedor: "
+    Leer sueldo_base
+	
+    Escribir "Introduzca la cantidad de la primera venta: "
+    Leer venta1
+    Escribir "Introduzca la cantidad de la segunda venta: "
+    Leer venta2
+    Escribir "Introduzca la cantidad de la tercera venta: "
+    Leer venta3
+	
+    total_ventas <- venta1 + venta2 + venta3
+	
+    comision <- total_ventas * 0.10
+	
+    total_pago <- sueldo_base + comision
+	
+    Escribir "Total de ventas realizadas: ", total_ventas
+    Escribir "Comisión total por ventas: ", comision
+    Escribir "Total a recibir en el mes: ", total_pago
+
+FinAlgoritmo
