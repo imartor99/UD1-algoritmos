@@ -1,0 +1,37 @@
+Algoritmo ej20
+	//Diseñar un algoritmo que nos diga el dinero que tenemos (en euros y céntimos) después de pedirnos
+	//cuantas monedas tenemos (de 2 euros, 1 euro, 50 céntimos, 20 céntimos o 10 céntimos).
+	
+	
+    Definir monedas2Euros, monedas1Euro, monedas50Centimos, monedas20Centimos, monedas10Centimos Como Entero
+    Definir totalEuros, totalCentimos Como Real
+	
+    
+    totalEuros <- 0
+    totalCentimos <- 0
+
+    Escribir "Ingrese la cantidad de monedas de 2 euros:"
+    Leer monedas2Euros
+    Escribir "Ingrese la cantidad de monedas de 1 euros:"
+    Leer monedas1Euro
+    Escribir "Ingrese la cantidad de monedas de 50 céntimos:"
+    Leer monedas50Centimos
+    Escribir "Ingrese la cantidad de monedas de 20 céntimos:"
+    Leer monedas20Centimos
+    Escribir "Ingrese la cantidad de monedas de 10 céntimos:"
+    Leer monedas10Centimos
+	
+  
+    totalEuros <- monedas2Euros * 2 + monedas1Euro * 1
+    totalCentimos <- monedas50Centimos * 50 + monedas20Centimos * 20 + monedas10Centimos * 10
+
+    Si totalCentimos >= 100 Entonces
+        totalEuros <- totalEuros + totalCentimos / 100
+        totalCentimos <- totalCentimos Mod 100
+    Fin Si
+	
+ 
+    Escribir "El total de dinero es: ", totalEuros, " euros y ", totalCentimos, " céntimos."
+	
+	
+FinAlgoritmo
